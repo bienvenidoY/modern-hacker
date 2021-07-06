@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5e87a98-9781-44cb-8ce8-e9272d80501a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/guide/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/siteData.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/siteData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/themeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/.temp/internal/themeData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/404.html.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/404.html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/guide/index.html.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/guide/index.html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/index.html.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/.temp/pages/index.html.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docs:dev">
+  <component name="RunManager" selected="npm.docs:build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -80,8 +79,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.docs:build" />
+        <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -98,7 +97,7 @@
       <workItem from="1625047067048" duration="108000" />
       <workItem from="1625047194886" duration="9191000" />
       <workItem from="1625218476780" duration="3886000" />
-      <workItem from="1625449015202" duration="14418000" />
+      <workItem from="1625449015202" duration="14786000" />
     </task>
     <servers />
   </component>

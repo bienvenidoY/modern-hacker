@@ -100,9 +100,14 @@ dist
 # TernJS port file
 .tern-port
 
+# MacOS desktop services store
+.DS_Store
+
 lib
 temp
-.DS_Store
 npm-debug.log
 yarn-error.log
 .idea
+docs/.vuepress/.cache
+docs/.vuepress/.temp
+docs/.vuepress/dist
