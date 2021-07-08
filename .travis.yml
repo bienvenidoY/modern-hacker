@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10"
+  - "12"
 
 install:
   - yarn --frozen-lockfile
@@ -13,4 +13,4 @@ after_script:
 
 branchs:
   only:
-    master
+    main
