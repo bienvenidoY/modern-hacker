@@ -5,10 +5,15 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['eslint:recommended'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
   parserOptions: {
     parser: 'babel-eslint',
+    sourceType: 'module'
   },
+  "plugins": ["prettier"],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -39,5 +44,6 @@ module.exports = {
     semi: [2, 'never'],
     'semi-spacing': [2, { before: false, after: true }],
     'import/no-duplicates': 0,
+    "prettier/prettier": "error"
   },
 }

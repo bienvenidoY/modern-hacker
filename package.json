@@ -33,25 +33,33 @@
     "build": "gulp build",
     "api": "api-extractor run",
     "test": "jest --coverage --verbose -u",
-    "lint": "eslint --ext .js,.ts --format=pretty ./src",
-    "lint:fix": "eslint --fix --ext .js,.ts --format=pretty ./src",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "npm run lint --fix",
     "changelog": "gulp changelog",
     "version": "yarn changelog && git add CHANGELOG.md",
     "release": "yarn test && yarn build && np --no-cleanup --yolo --any-branch",
     "prepare": "husky install",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@microsoft/api-extractor": "^7.15.0",
     "@types/fs-extra": "^9.0.11",
     "@types/gulp": "^4.0.8",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
     "@vuepress/plugin-docsearch": "^2.0.0-alpha.1",
     "chalk": "^4.1.1",
     "conventional-changelog-cli": "^2.1.1",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "fs-extra": "^9.0.1",
     "gulp": "^4.0.2",
     "husky": "^6.0.0",
@@ -60,6 +68,7 @@
     "node-sass": "^6.0.1",
     "np": "^7.5.0",
     "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
     "rollup": "^2.46.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -76,7 +85,8 @@
   "dependencies": {},
   "lint-staged": {
     "*.{.ts,.js}": [
-      "eslint --fix --format=pretty"
+      "prettier --write",
+      "eslint --fix"
     ]
   }
 }
