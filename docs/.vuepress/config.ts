@@ -6,6 +6,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   bundlerConfig: {
     // vite 打包工具的选项
   },
+  base: 'modern-hack',
   dest: 'doc-dist',
   title: "ModernHack",
   description: "一个处理H5端浏览器兼容问题的方案集合",
