@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - 'docs/**'
+    paths:
+      - package.json
 jobs:
   build-lib:
     runs-on: ubuntu-latest
