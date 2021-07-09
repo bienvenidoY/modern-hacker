@@ -10,13 +10,13 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module'
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module',
   },
-  "plugins": ["prettier"],
+  plugins: ['prettier', '@typescript-eslint'],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
     eqeqeq: 'off',
     'no-tabs': 'off',
     'no-mixed-spaces-and-tabs': 2,
@@ -44,6 +44,6 @@ module.exports = {
     semi: [2, 'never'],
     'semi-spacing': [2, { before: false, after: true }],
     'import/no-duplicates': 0,
-    "prettier/prettier": "error"
+    'prettier/prettier': 'error',
   },
 }

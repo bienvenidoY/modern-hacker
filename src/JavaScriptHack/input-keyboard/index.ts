@@ -3,7 +3,7 @@
  * 输入框失去焦点时，调用此方法
  * @param el DOM | id
  */
-const hackIosKeyboardClose = (el: HTMLImageElement) => {
+const hackIosKeyboardClose = (el: HTMLElement): void => {
   const hack = () => {
     const scrollTop =
       window.pageYOffset ||

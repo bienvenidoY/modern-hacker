@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import path from 'path'
 import { RollupOptions } from 'rollup'
 import rollupTypescript from 'rollup-plugin-typescript2'
@@ -40,17 +39,15 @@ const rollupConfig: RollupOptions = {
     // 验证导入的文件
     eslint({
       throwOnError: true, // lint 结果有错误将会抛出异常
-      throwOnWarning: true,
+      throwOnWarning: false,
       include: ['src/**/*.ts'],
       exclude: ['node_modules/**', 'lib/**', '*.js'],
     }),
     postcss({
-      plugins: [
-        autoprefixer(),
-      ],
+      plugins: [autoprefixer()],
       modules: true,
       extract: path.resolve('lib/index.css'),
-      inject: false,      // extract: path.resolve('dist/my-custom-file-name.css')
+      inject: false,
     }),
     // 使得 rollup 支持 commonjs 规范，识别 commonjs 规范的依赖
     commonjs(),
@@ -62,7 +59,9 @@ const rollupConfig: RollupOptions = {
         moduleDirectory: 'node_modules',
       },
     }),
-    rollupTypescript(),
+    rollupTypescript({
+      verbosity: 2,
+    }),
     babel({
       runtimeHelpers: true,
       // 只转换源代码，不运行外部依赖
