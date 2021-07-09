@@ -8,7 +8,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   },
   base: '/modern-hacker/',
   dest: 'doc-dist',
-  title: "ModernHacker",
+  title: "Modern Hacker",
   description: "一个处理H5端浏览器兼容问题的方案集合",
   themeConfig: {
     logo: '/logo.png',
