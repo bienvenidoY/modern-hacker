@@ -1,6 +1,6 @@
 {
   "name": "modern-hacker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "H5端js和css兼容方案集合",
   "typings": "./lib/index.d.ts",
   "files": [

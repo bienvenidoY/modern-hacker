@@ -1,6 +1,6 @@
 # 工具库更新日志
 
-## [0.0.2](https://github.com/bienvenidoY/modern-hack/compare/0.0.1...0.0.2) (2021-07-09)
+## [0.0.3](https://github.com/bienvenidoY/modern-hack/compare/0.0.1...0.0.3) (2021-07-09)
 
 
 ### Bug Fixes
@@ -19,6 +19,7 @@
 
 ### Features
 
+* changlog ([52b3216](https://github.com/bienvenidoY/modern-hack/commit/52b32169023fc156e1c18879e60c34d8add0a4a7))
 * doc配置 ([b08bf97](https://github.com/bienvenidoY/modern-hack/commit/b08bf972053d507e860bd1f4dd5f23ac6211d492))
 * doc配置 ([fbcbcbb](https://github.com/bienvenidoY/modern-hack/commit/fbcbcbb44cbb1cae82bcb77b9c501e056a8f067c))
 * doc配置 ([5a58804](https://github.com/bienvenidoY/modern-hack/commit/5a5880485903c96ad01cccd741d0a9d01b500e5f))
