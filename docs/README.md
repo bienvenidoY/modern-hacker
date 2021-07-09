@@ -6,7 +6,7 @@ actions:
   link: /guide/
   type: primary
 features:
-- title: 效率1
+- title: 效率
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
 - title: 多元
   details: 享受 Vue 的开发体验，可以在 Markdown 中使用 Vue 组件，又可以使用 Vue 来开发自定义主题。
